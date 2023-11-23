@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+  <link rel="stylesheet" href="Revo.css">
+  <style>
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="ripay">
+    <h1>OCTAV TRAVEL AGENTS </h1>
+    <p>Enjoy your traveling and Hope you like it have Happiness </p>
+    <div class="menu-container">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">Our Packages</div>
+      <div class="menu-item">Call Us</div>
+    </div>
+  </nav>
+  
+  <div class="desktop-layout">
+  <div class="slider-container">
+    <img class="slider-image" src="https://img.freepik.com/free-photo/high-angle-pie-chart-with-cities_52683-98166.jpg?w=740&t=st=1700754428~exp=1700755028~hmac=6ca45ff37d8acf6490a479106f1dbb845f8e39fd4ae2a1e6986cde86b71f2200" alt="Slide 1">
+    <img class="slider-image" src="https://img.freepik.com/free-photo/magnificent-scenery-beach-with-trees-sea-during-sunset_181624-21718.jpg?w=740&t=st=1700754654~exp=1700755254~hmac=1318c6882c08d0da6a63d5fee84fb8a4ac464b21502cf977f9ac19efc0e2f37d" alt="Slide 2">
+    <img class="slider-image" src="https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=740&t=st=1700754820~exp=1700755420~hmac=6979922045a359c6175c1609d9659c21aec51be172f7088058d26f04f939fc48" alt="Slide 3">
+  </div>
+
+  <div class="container">
+    <h2>Contact us</h2>
+    <form id="bookingForm" onsubmit="return validateForm()">
+        <label for="destination">Your Name:</label>
+        <input type="text" id="destination" name="destination" required>
+        <span id="nameError" class="error-message"></span>
+
+
+      <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" disabled required>
+        <span id="emailError" class="error-message"></span>
+
+
+<label for="interest">What are you Interested in:</label>
+<select id="interest" name="interest" required>
+  <option value="2023-12-01">Jakarta Town</option>
+  <option value="2023-12-02">Bogor of puncak</option>
+  <option value="2023-12-03">Medan on pantai</option>
+  <option value="2023-12-04">Bandung at Gunung</option>
+  <option value="2023-12-05">Bekasi of Patriot Stadium</option>
+  <option value="2023-12-06">Yogyakarta Enjoy Kuliner</option>
+  <option value="2023-12-07">Bali</option>
+  <option value="2023-12-08">Banda-Neira</option>
+  <option value="2023-12-09">Jawa Barat</option>
+  <option value="2023-12-10">outside the island of Java</option>
+</select>
+
+      <form>
+      <button type="button" onclick="submitForm()">Send</button>
+    </form>
+  </div>
+
+  <script src="Revo.js"></script>
+</body>
+</html>
