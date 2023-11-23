@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://img.freepik.com/free-photo/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand_335224-762.jpg?w=740&t=st=1700755771~exp=1700756371~hmac=ad45d8645ddc3fd93536f0af001c4293510326bc2bf72af3df733622ac28f2c2')center/cover no-repeat; /* Replace 'your-background-image.jpg' with your image path */
+}
+
+html, body {
+  height: 100%;
+}
+
+.ripay {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.menu-container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Updated to push menu items to the right */
+  }
+
+  .menu-item {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    }
+    
+/* Container for Desktop Layout */
+.desktop-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Slider on the Left */
+.slider-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Booking Form on the Right */
+.container {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 767px) {
+  .desktop-layout {
+    flex-direction: column;
+  }
+
+  /* Image Slider on Top */
+  .slider-container {
+    order: -1; /* Move to the top */
+  }
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+    }
